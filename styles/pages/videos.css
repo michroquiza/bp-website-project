@@ -114,22 +114,6 @@ body {
   padding: 1.5em;
   background: rgba(241, 168, 187, 0.31);
 }
-.store-grid .store-cards .store-img-two {
-  max-width: 83%;
-  max-height: 83%;
-  padding: 1.5em;
-}
-.store-grid .store-cards .store-hide {
-  position: absolute;
-  top: 0.8em;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-.store-grid .store-cards .store-hide:hover {
-  display: block;
-  z-index: 1;
-  opacity: 1;
-}
 .store-grid .store-cards .flex-center {
   color: #F3A8BA;
   display: flex;
@@ -514,23 +498,8 @@ header .nav-mobile .floating-menu .icon-list {
   align-items: center;
   gap: 1em;
 }
-header .nav-mobile .floating-menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  visibility: hidden;
-  background: rgba(0, 0, 0, 0.733);
-  opacity: 0;
-}
 header .nav-mobile .floating-menu-open {
   left: 0;
-}
-header .nav-mobile .floating-menu-open .floating-menu-overlay {
-  visibility: visible;
-  opacity: 1;
 }
 header .nav-mobile .language {
   font-size: 1.1rem;
