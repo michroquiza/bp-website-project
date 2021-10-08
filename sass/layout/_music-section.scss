@@ -1,0 +1,84 @@
+@use '../helpers'as h;
+
+
+.music-section {
+    padding: 0.05em 1em 0 1em;
+
+    .flex-center {
+        color: h.$pink;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-transform: uppercase;
+        margin: 0 auto;
+
+        @include h.responsive(largescreen) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+
+        }
+    }
+
+    .music-section-heading {
+        padding-top: 3rem;
+        color: h.$transparentwhite;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: h.$medium;
+
+        @include h.responsive(largescreen) {
+            font-size: 15rem;
+            font-weight: h.$regular;
+            position: absolute;
+            padding-top: 2rem;
+            left: 3rem;
+        }
+
+        @include h.responsive(tabscreenfour) {
+            padding-top: 4rem;
+            font-size: 6rem;
+            font-weight: h.$medium;
+
+        }
+    }
+
+
+
+    .glide-style {
+        @include h.responsive(largescreen) {
+            padding-top: 13em;
+        }
+    }
+
+    .music-subheading {
+        margin: 0.8em 0 1rem 0;
+    }
+
+    .music-heading {
+        font-family: h.$serif;
+        font-size: 1.5rem;
+        line-height: 0;
+        margin: 0 0 1rem 0;
+
+        @include h.responsive(largescreen) {
+            font-size: 3rem;
+            line-height: 1.7rem;
+            padding-bottom: 0.1rem;
+        }
+    }
+
+    .music-album-cover {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0 5rem;
+
+        @include h.responsive(largescreen) {
+            padding: 0 2rem 0 0;
+        }
+    }
+}

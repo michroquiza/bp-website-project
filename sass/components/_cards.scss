@@ -1,0 +1,49 @@
+@use '../helpers'as h;
+
+.store-grid {
+    padding: 0 3rem 3.5rem 3rem;
+
+    @include h.responsive(largescreen) {
+        padding-top: 3.5rem;
+    }
+
+    .store-cards {
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        row-gap: 2em;
+
+        @include h.responsive(largescreen) {
+            padding: 14em 0 3em 0;
+
+        }
+
+        .store-card-item {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            max-height: 100%;
+            flex-flow: column;
+            margin: 0 auto;
+        }
+
+        .store-img {
+            max-width: 83%;
+            max-height: 83%;
+            padding: 1.5em;
+            background: h.$transparentpink;
+        }
+
+        .flex-center {
+            color: h.$pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-transform: uppercase;
+            margin: 0 auto;
+        }
+    }
+}

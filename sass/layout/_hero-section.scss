@@ -1,0 +1,45 @@
+@use '../helpers'as h;
+
+.hero-section {
+
+    // position: relative;
+    // // padding: 10em 0;
+
+    // @include h.responsive(largescreen) {
+    //     position: relative;
+    //     padding: 25em 0 10em 0;
+    //     z-index: -3;
+    //     background-color: black;
+
+    // }
+
+
+    // .for-mobile {
+    //     max-height: 100%;
+    //     max-width: 100%;
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+
+    //     @include h.responsive(smallscreen) {
+    //         display: none;
+    //     }
+    // }
+
+    // .for-desktop {
+    //     display: none;
+
+    //     @include h.responsive(largescreen) {
+    //         position: fixed;
+    //         top: -5.5em;
+    //         left: -10em;
+    //         z-index: -1;
+    //         margin-bottom: 2em;
+    //         display: block;
+    //         min-width: 10%;
+    //         min-height: 10%;
+
+
+    //     }
+    // }
+}

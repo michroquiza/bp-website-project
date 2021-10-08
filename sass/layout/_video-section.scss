@@ -1,0 +1,69 @@
+@use '../helpers'as h;
+
+.video-section {
+    padding-bottom: 6em;
+
+
+    .video-container {
+        @include h.responsive(smallerscreen) {
+            padding: 7em 2em 0 2em;
+        }
+
+        @include h.responsive(tabscreentwo) {
+            padding: 7em 5em 0 5em;
+        }
+    }
+
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        top: -5em;
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    @include h.responsive(largescreen) {
+        padding-top: 4em;
+        margin: 0 9em 0 9em;
+    }
+
+    .flex-center,
+    .video-wrapper {
+        color: h.$pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+
+    .video-section-heading {
+        color: h.$transparentwhite;
+        text-align: left;
+        font-weight: h.$medium;
+        font-size: 3rem;
+
+        @include h.responsive(largescreen) {
+            display: inline;
+            margin-left: -0.4em;
+            text-align: left;
+            font-size: 15rem;
+            font-weight: h.$regular;
+        }
+
+        @include h.responsive(tabscreenfour) {
+            padding-top: 4rem;
+            font-size: 6rem;
+            font-weight: h.$medium;
+
+        }
+    }
+}

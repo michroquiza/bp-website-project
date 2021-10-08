@@ -1,0 +1,202 @@
+@use '../helpers'as h;
+
+.footer {
+    padding-top: 1em;
+    background: h.$dark;
+
+    .footer-container {
+
+        margin: 3em 2em 0em 3em;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1.3fr 1.4fr 0.3fr;
+        gap: 0px 11px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "source blackpink"
+            "shows documentary"
+            "content-disclaimer content-disclaimer"
+            "designer designer";
+
+
+        .source {
+            grid-area: source;
+        }
+
+        .blackpink {
+            grid-area: blackpink;
+            padding-bottom: 2em;
+        }
+
+        .shows {
+            grid-area: shows;
+        }
+
+        .documentary {
+            grid-area: documentary;
+        }
+
+        .content-disclaimer {
+            margin-top: 2em;
+            margin-bottom: 1em;
+            grid-area: content-disclaimer;
+
+            @include h.responsive(tabscreen) {
+                padding: 1.5em 0;
+            }
+
+            @include h.responsive(mobile) {
+                padding-bottom: 1em;
+            }
+        }
+
+        .designer {
+            grid-area: designer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 3em;
+        }
+
+
+        @include h.responsive(mobile) {
+            .content-disclaimer {
+                margin-top: -0.5em;
+
+            }
+        }
+
+        @include h.responsive(tabscreen) {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1.4fr 1.1fr 0.5fr;
+            grid-auto-columns: 1fr;
+            gap: 19px 11px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "source blackpink shows documentary"
+                "content-disclaimer content-disclaimer content-disclaimer content-disclaimer"
+                "designer designer designer designer";
+
+
+            .source {
+                grid-area: source;
+            }
+
+            .blackpink {
+                grid-area: blackpink;
+            }
+
+            .shows {
+                grid-area: shows;
+            }
+
+            .documentary {
+                grid-area: documentary;
+            }
+
+            .content-disclaimer {
+                margin-top: 0;
+                grid-area: content-disclaimer;
+            }
+
+            .designer {
+                grid-area: designer;
+                padding-bottom: 3em;
+            }
+        }
+
+        @include h.responsive(midscreen) {
+            margin: 4em 3.5em 2em 3.5em;
+
+            display: grid;
+            grid-template-columns: 0.9fr 0.9fr 1fr 0.8fr 0.6fr 2fr;
+            grid-template-rows: 1.8fr 0.2fr;
+            gap: 0px 10px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "source blackpink shows documentary . content-disclaimer"
+                "designer designer designer designer designer designer";
+
+
+            .source {
+                grid-area: source;
+            }
+
+            .blackpink {
+                grid-area: blackpink;
+
+            }
+
+            .shows {
+                grid-area: shows;
+            }
+
+            .documentary {
+                grid-area: documentary;
+            }
+
+            .content-disclaimer {
+                margin-top: 0;
+                grid-area: content-disclaimer;
+            }
+
+
+            .designer {
+                grid-area: designer;
+                display: flex;
+                justify-content: center;
+                padding-top: 2em;
+            }
+        }
+
+        @include h.responsive(largescreen) {
+            margin-bottom: 0;
+        }
+    }
+
+
+    .title {
+        color: h.$grey;
+        text-transform: uppercase;
+        margin-bottom: 0.6rem;
+        font-size: 1.1rem;
+
+        @include h.responsive(largescreen) {
+            font-size: 1rem;
+        }
+    }
+
+    .separator {
+        width: 100px;
+    }
+
+    p {
+        margin-bottom: 0;
+        text-transform: none;
+        text-align: justify;
+    }
+
+    .c {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column;
+    }
+
+    .link,
+    .content-disclaimer-body {
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        color: h.$grey;
+        text-decoration: none;
+        font-size: 0.9rem;
+
+        @include h.responsive(largescreen) {
+            font-size: 0.80rem;
+        }
+    }
+
+
+}

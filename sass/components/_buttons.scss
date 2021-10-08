@@ -1,0 +1,40 @@
+@use '../helpers'as h;
+
+.music-link,
+.store-link,
+.video-link {
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid h.$pink;
+    padding: 0.5rem 1.4rem;
+    color: h.$pink;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.video-link {
+    margin-top: -5em;
+}
+
+.center-link {
+    text-align: center;
+}
+
+.icon__icon {
+    fill: h.$semitransparentwhite;
+}
+
+.glide__arrow {
+    @include h.responsive(largescreen) {
+        top: 65% !important;
+    }
+}
+
+
+.close-icon {
+    position: absolute;
+    top: 0.5em;
+    right: 0.6em;
+
+}
