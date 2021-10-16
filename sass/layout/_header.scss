@@ -157,9 +157,14 @@ header {
         .language {
             font-size: 1.1rem;
             text-decoration: none;
-            color: h.$pink;
             text-transform: uppercase;
             font-weight: h.$bold;
+
+            a {
+                text-decoration: none;
+                color: h.$pink;
+
+            }
         }
     }
 }

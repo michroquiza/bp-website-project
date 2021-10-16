@@ -31,10 +31,13 @@
     }
 }
 
+.menu-icon {
+    cursor: pointer;
+}
 
 .close-icon {
     position: absolute;
     top: 0.5em;
     right: 0.6em;
-
+    cursor: pointer;
 }

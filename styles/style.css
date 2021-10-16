@@ -216,9 +216,12 @@ header .nav-mobile .floating-menu-open {
 header .nav-mobile .language {
   font-size: 1.1rem;
   text-decoration: none;
-  color: #F3A8BA;
   text-transform: uppercase;
   font-weight: 700;
+}
+header .nav-mobile .language a {
+  text-decoration: none;
+  color: #F3A8BA;
 }
 
 .music-section {
@@ -635,10 +638,15 @@ header .nav-mobile .language {
   }
 }
 
+.menu-icon {
+  cursor: pointer;
+}
+
 .close-icon {
   position: absolute;
   top: 0.5em;
   right: 0.6em;
+  cursor: pointer;
 }
 
 .music .flex {
