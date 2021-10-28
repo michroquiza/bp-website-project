@@ -363,7 +363,7 @@ header .nav-mobile .language a {
   height: 100%;
 }
 .video-section .video-wrapper iframe iframe {
-  border: 0;
+  border: none;
 }
 @media (min-width: 1000px) {
   .video-section {
