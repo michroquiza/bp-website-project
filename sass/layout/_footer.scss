@@ -42,6 +42,7 @@
             margin-bottom: 1em;
             grid-area: content-disclaimer;
 
+
             @include h.responsive(tabscreen) {
                 padding: 1.5em 0;
             }
@@ -163,6 +164,8 @@
         text-transform: uppercase;
         margin-bottom: 0.6rem;
         font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: 0.05rem;
 
         @include h.responsive(largescreen) {
             font-size: 1rem;
@@ -198,5 +201,9 @@
         }
     }
 
+    .content-disclaimer-body {
+        margin-top: -1em;
+
+    }
 
 }

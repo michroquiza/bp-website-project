@@ -531,6 +531,8 @@ header .nav-mobile .language a {
   text-transform: uppercase;
   margin-bottom: 0.6rem;
   font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
 }
 @media (min-width: 1000px) {
   .footer .title {
@@ -563,6 +565,9 @@ header .nav-mobile .language a {
 .footer .content-disclaimer-body {
     font-size: 0.8rem;
   }
+}
+.footer .content-disclaimer-body {
+  margin-top: -1em;
 }
 
 .store-grid {
