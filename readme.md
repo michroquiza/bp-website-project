@@ -1,5 +1,5 @@
 # Music Artist Website
-![Music Artists Website](musiciancover.png)
+![Music Artists Website](cover.png)
 
 ### About This Project
 A website designed for musicians where visitors and fans can check the artists' latest albums, stream the latest single, watch the latest music videos, and buy merchandise.
