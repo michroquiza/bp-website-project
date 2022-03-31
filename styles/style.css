@@ -9,6 +9,7 @@
 body {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+  background-color: black;
 }
 
 .background {
@@ -55,22 +56,25 @@ body {
   font-weight: 700;
   font-family: "Library3am", sans-serif;
   padding-left: 10em;
+  padding-top: 0.4em;
   font-weight: 500;
   font-size: 0.7rem;
   white-space: nowrap;
   letter-spacing: 0.3rem;
-  text-shadow: 0 0 10px #E5E5E5, 0 0 30px #27cdff, 0 0 40px #27cdff, 0 0 50px #27cdff, 0 0 70px #27cdff;
+  text-shadow: 0 0 5px #E5E5E5, 0 0 10px #E5E5E5, 0 0 15px #27cdff, 0 0 25px #27cdff, 0 0 35px #27cdff;
   animation: glow 1s ease-in-out infinite alternate;
 }
 @media (min-width: 1000px) {
   .ticker .ticker-list .ticker-item {
     font-size: 1.25rem;
     letter-spacing: 0.55rem;
+    text-shadow: 0 0 5px #E5E5E5, 0 0 15px #E5E5E5, 0 0 20px #27cdff, 0 0 30px #27cdff, 0 0 40px #27cdff, 0 0 55px #27cdff;
   }
 }
 @media (min-width: 610px) and (max-width: 980px) {
   .ticker .ticker-list .ticker-item {
     font-size: 0.9rem;
+    text-shadow: 0 0 5px #E5E5E5, 0 0 15px #E5E5E5, 0 0 20px #27cdff, 0 0 30px #27cdff, 0 0 40px #27cdff, 0 0 55px #27cdff;
   }
 }
 
@@ -80,7 +84,6 @@ body {
   }
 }
 header {
-  background-image: url(/assets/images/homepage/background-bp.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,7 +93,8 @@ header .nav {
 }
 @media (min-width: 1000px) {
   header .nav {
-    padding: 1em 0 40em 0;
+    background-color: #000000a3;
+    padding: 1em 0 0 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -121,8 +125,8 @@ header .nav .ul .language {
   }
 }
 header .nav-mobile {
-  padding: 1em 0 30em 0;
-  background-image: url(/assets/images/homepage/background-mobile.png);
+  padding: 1em 0 0 0;
+  background-color: #0000007a;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,6 +226,59 @@ header .nav-mobile .language {
 header .nav-mobile .language a {
   text-decoration: none;
   color: #F3A8BA;
+}
+
+.mobile-banner {
+  display: block;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  .mobile-banner {
+    display: none;
+  }
+}
+
+.desktop-banner {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .desktop-banner {
+    display: block;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+.hero-section .for-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  max-width: 100%;
+}
+@media (min-width: 1000px) {
+  .hero-section .for-mobile {
+    display: none;
+  }
+}
+.hero-section .for-desktop {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .hero-section .for-desktop {
+    display: block;
+    position: fixed;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -2;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .music-section {

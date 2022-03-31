@@ -1,19 +1,16 @@
 @use '../helpers'as h;
 
 header {
-
-    background-image: url(/assets/images/homepage/background-bp.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     .nav {
-
         display: none;
 
         @include h.responsive(largescreen) {
-
-            padding: 1em 0 40em 0;
+            background-color: #000000a3;
+            padding: 1em 0 0 0;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -51,8 +48,8 @@ header {
     }
 
     .nav-mobile {
-        padding: 1em 0 30em 0;
-        background-image: url(/assets/images/homepage/background-mobile.png);
+        padding: 1em 0 0 0;
+        background-color: #0000007a;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -86,8 +83,6 @@ header {
                 }
             }
         }
-
-
 
         .floating-menu {
             margin-top: -1em;
@@ -151,7 +146,6 @@ header {
 
         .floating-menu-open {
             left: 0;
-
         }
 
         .language {
@@ -163,7 +157,6 @@ header {
             a {
                 text-decoration: none;
                 color: h.$pink;
-
             }
         }
     }
