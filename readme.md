@@ -12,6 +12,3 @@ A website designed for musicians where visitors and fans can check the artists' 
 - SCSS
 - Flexbox
 - Grid
-
-### Mockups
-The [mockup](https://www.figma.com/file/PbvGfyaauVHnFGWaF08uak/BLACKPINK-WEBSITE-MOCKUP?node-id=716%3A2) was designed in Figma.
