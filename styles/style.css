@@ -93,7 +93,7 @@ header .nav {
 }
 @media (min-width: 1000px) {
   header .nav {
-    background-color: #000000a3;
+    background-color: #0000009e;
     padding: 1em 0 0 0;
     display: flex;
     justify-content: space-around;
@@ -126,7 +126,7 @@ header .nav .ul .language {
 }
 header .nav-mobile {
   padding: 1em 0 0 0;
-  background-color: #0000007a;
+  background-color: #00000078;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
